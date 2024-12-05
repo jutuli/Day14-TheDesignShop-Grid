@@ -1,6 +1,51 @@
 /* ========== General Styling ============ */
+
+@font-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Karla", Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 2.5vh 2.5vw;
+}
+
+img {
+  width: auto;
+  height: 100%;
+}
+
+/* ========= Header =========== */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.5vh;
+}
+
+nav ul {
+  display: flex;
+  gap: 4vw;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
 }
