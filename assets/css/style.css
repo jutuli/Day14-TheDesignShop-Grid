@@ -56,6 +56,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 1.3vw;
+  margin-bottom: 6vh;
 }
 
 main section {
@@ -83,4 +84,30 @@ main section:not:nth-child(7n + 1) {
 
 .product-brand {
   color: #848484;
+}
+
+/* =========== Footer ========= */
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  justify-content: space-between;
+  padding-bottom: 3.74vw;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2.5vw;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: top;
+}
+
+/* ========== Copyright ========== */
+.copyright {
+  color: #848484;
+  padding-bottom: 1vh;
 }
