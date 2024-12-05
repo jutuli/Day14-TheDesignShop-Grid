@@ -13,14 +13,14 @@
 html {
   font-size: 10px;
   font-family: "Karla", Helvetica, sans-serif;
-  height: 100vh;
-  width: 100vw;
+  height: 95vh;
+  width: 95vw;
   margin: 2.5vh 2.5vw;
 }
 
 img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 /* ========= Header =========== */
@@ -48,4 +48,39 @@ nav ul {
 .logo {
   font-size: 2rem;
   font-weight: 700;
+}
+
+/* ============ Grid Styling ========== */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1.3vw;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vw;
+  margin-bottom: 1.3vw;
+}
+
+main section:nth-child(7n + 1) {
+  grid-column: span 3;
+}
+
+main section:not:nth-child(7n + 1) {
+  grid-column: span 1;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.product-brand {
+  color: #848484;
 }
